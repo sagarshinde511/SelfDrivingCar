@@ -55,7 +55,7 @@ if not df.empty:
         folium.Marker(
             location=[row["lat"], row["lon"]],
             popup=folium.Popup(f"Car location: {row['id']}", max_width=250),
-            tooltip=f"Pothole ID: {row['id']}",
+            tooltip=f"CarLocation ID: {row['id']}",
             icon=folium.Icon(color="red", icon="info-sign")
         ).add_to(m)
 
